@@ -1,0 +1,40 @@
+$color-cod-gray: #111;
+$color-cararra: #edeee9;
+$color-bright-gray: #37384C;
+$color-dusk: #3d3d3d;
+$color-camel: #ab9e95;
+$color-black: #000;
+
+$color-pomegranate: #f32015;
+$cursor-stroke: #3d3d3d;
+$cursor-fill: #3d3d3d;
+$cursor-stroke-width: 1px;
+
+$color-leather: #987654;
+$color-satin-linen: #E3DFD3;
+$color-quarter-spanish-white: #F9F1E7;
+$color-white: #fff;
+
+$font-love-story-self-made: 'Love Story Self Made';
+
+$ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+$curve: cubic-bezier(.19,1,.22,1);
+$in-out: cubic-bezier(0.6, 0.14, 0, 1);
+
+$black: black;
+$white: white;
+$grey: #e3e3e3;
+
+$font-sans: "Fustat", sans-serif;
+$font-serif: 'Bodoni Moda', serif;
+
+$z-indexes: (
+  'preloader',
+  'transition',
+  'cursor',
+  'navigation',
+  'content',
+  'canvas',
+  'overlay'
+);

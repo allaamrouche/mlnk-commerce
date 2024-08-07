@@ -1,0 +1,121 @@
+.hover__gallery__wrapper {
+	height: 104rem;
+	margin-bottom: 20rem;
+}
+.hover__gallery {
+	padding: 2rem 1rem 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	counter-reset: menucounter;
+	z-index: 100;
+}
+
+.hover__gallery__item {
+	margin-bottom: 1rem;
+	font-family: 'Love Story Self Made', serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: $color-bright-gray;
+	will-change: transform;
+}
+
+.hover__gallery__item::before {
+	counter-increment: menucounter;
+	content: counters(menucounter, ".", decimal-leading-zero);
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: $color-bright-gray;
+	z-index: -1;
+	line-height: 1;
+}
+
+.hover__gallery__item--text {
+	pointer-events: none;
+	display: block;
+	line-height: 1;
+	position: relative;
+	z-index: -1;
+	font-size: 10rem;
+}
+
+.hover__gallery__item--text .word {
+	padding: 0 1.25rem;
+	overflow: hidden;
+	perspective: 1000px;
+	perspective-origin: -150% 50%;
+}
+
+.hover__gallery__item--text .word--clone {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.hover__gallery__item--text .word--clone .char {
+	opacity: 0;
+}
+
+.hover__gallery__item--text .char {
+	transform-origin: 0% 0%;
+	will-change: transform;
+}
+
+.hover__gallery--reveal{
+	position: absolute;
+	z-index: -1;
+	width: 250px;
+	height: 350px;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	will-change: transform, filter;
+}
+
+.hover__gallery--reveal__inner {
+	overflow: hidden;
+	will-change: transform, opacity;
+}
+
+.hover__gallery--reveal__inner,
+.hover__gallery--reveal__img
+
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.hover__gallery--reveal__img
+{
+	background-size: cover;
+	background-position: 50% 50%;
+	will-change: transform;
+}
+
+@media screen and (min-width: 53em) {
+	
+	.hover__gallery {
+		padding: 21vh 1rem 3rem;
+	}
+	.hover__gallery__item::before {
+		left: 1vw;
+		top: 0.25vw;
+	}
+	.hover__gallery__item--text {
+		font-size: 7.5vw;
+	}
+	.hover__gallery__item--text .word {
+    	padding: 0 3vw;
+    }
+}

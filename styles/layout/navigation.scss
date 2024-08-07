@@ -1,0 +1,61 @@
+.navigation {
+    @extend %cover;
+  
+    pointer-events: none;
+    position: fixed;
+    z-index: z('navigation');
+    height: 4rem;
+    width: 95vw;
+    margin: 10rem auto;
+  }
+
+  .navigation__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navigation__list {
+    display: flex;
+  }
+
+  .navigation__logo__link {
+    @extend %description-24;
+
+    font-family: "Love Story Self Made";
+    height: 4rem;
+  
+    pointer-events: auto;
+
+    transition: opacity .4s ease;
+    width: 12.8rem;
+    text-transform: uppercase;
+  
+    @include media('<phone') {
+      height: 4.3rem;
+      left: 5rem;
+      top: 5rem;
+      width: 27.9rem;
+    }
+  }
+  
+  .navigation__link__icon {
+    display: block;
+  }
+  
+  .navigation__list {
+  
+  }
+  
+  .navigation__list__item {
+    pointer-events: auto;
+  
+  }
+  
+  .navigation__list__link{
+    @extend %link--hidden;
+    @extend %title-24;
+    padding: 1.4rem 0;
+    display: block;
+  }
+  

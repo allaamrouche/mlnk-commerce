@@ -1,0 +1,51 @@
+{
+    "version": 2,
+    "settings": {
+      "color": {
+        "custom": true,
+        "customGradient": true,
+        "palette": [
+          { "slug": "cod-gray", "color": "#111", "name": "Cod Gray" },
+          { "slug": "cararra", "color": "#edeee9", "name": "Cararra" },
+          { "slug": "bright-gray", "color": "#37384C", "name": "Bright Gray" },
+          { "slug": "dusk", "color": "#3d3d3d", "name": "Dusk" },
+          { "slug": "camel", "color": "#ab9e95", "name": "Camel" },
+          { "slug": "black", "color": "#000", "name": "Black" },
+          { "slug": "pomegranate", "color": "#f32015", "name": "Pomegranate" },
+          { "slug": "leather", "color": "#987654", "name": "Leather" },
+          { "slug": "satin-linen", "color": "#E3DFD3", "name": "Satin Linen" },
+          { "slug": "quarter-spanish-white", "color": "#F9F1E7", "name": "Quarter Spanish White" },
+          { "slug": "white", "color": "#fff", "name": "White" }
+        ]
+      },
+      "typography": {
+        "customFontSize": true,
+        "fontSizes": [
+          { "slug": "small", "size": "12px", "name": "Small" },
+          { "slug": "normal", "size": "16px", "name": "Normal" },
+          { "slug": "large", "size": "24px", "name": "Large" },
+          { "slug": "larger", "size": "40px", "name": "Larger" },
+          { "slug": "huge", "size": "60px", "name": "Huge" },
+          { "slug": "gigantic", "size": "200px", "name": "Gigantic" }
+        ],
+        "fontFamilies": [
+          { "slug": "love-story", "fontFamily": "\"Love Story Self Made\", cursive", "name": "Love Story Self Made" },
+          { "slug": "satoshi-regular", "fontFamily": "\"Satoshi-Regular\", sans-serif", "name": "Satoshi Regular" },
+          { "slug": "satoshi-bold", "fontFamily": "\"Satoshi-Bold\", sans-serif", "name": "Satoshi Bold" }
+        ]
+      }
+    },
+    "styles": {
+      "root": {
+        "color": {
+          "text": "var(--wp--preset--color--satin-linen)",
+          "background": "var(--wp--preset--color--black)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--satoshi-regular)",
+          "lineHeight": "1"
+        }
+      }         
+    }
+  }
+  

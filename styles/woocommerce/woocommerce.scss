@@ -1,0 +1,15 @@
+.woocommerce div.product {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+ 
+}
+
+.woocommerce img, .woocommerce-page img {
+    // height: auto;
+    // max-width: 100%;
+    width: 55.4rem;
+    height: 78.2rem;
+    visibility: hidden;
+}
